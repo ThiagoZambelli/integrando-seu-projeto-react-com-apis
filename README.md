@@ -47,11 +47,23 @@
 # Problemas e Soluções ->
 ---
 
+## `useEffect`:
+> O useEffect é executado no início do ciclo de vida do componente quando não recebe nenhuma dependência. Dessa forma, podemos executar requisições uma vez, mesmo que o componente seja renderizado novamente.
+
+> No caso desta aplicação o `useEffect` esta fazendo a requisição dos restaurantes no inicio do ciclo de vida do componente para a pagina de restaurantes.
+
 &nbsp;
 
 ---
 # Aulas ->
 ---
+
+## Aula 1:
+
+- Baixamos e configuramos as dependências do Alfood;
+- Utilizamos o swagger para entender como a nova API funciona;
+- Instalamos e preparamos o axios;
+- Fizemos requisições GET, para listar pratos e restaurantes.
 
 &nbsp;
 
