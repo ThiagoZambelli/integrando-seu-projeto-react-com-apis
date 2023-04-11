@@ -2,3 +2,46 @@
   margin-top: 1.5rem;
   padding: 2rem;
 }
+.buscar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+
+  label,
+  input,
+  select{
+    font-size: 1.3rem;
+    border-radius: 15px;
+    padding: .3em .5em;
+  }
+
+  &__botao{
+    background-color: transparent;
+    border-radius: 15px;
+    border: 2px solid green;
+    color: green;
+    font-size: 1.3rem;
+    padding: .5em 1em;
+    cursor: pointer;
+    box-shadow: 0 0 6px green;
+
+    &:active{
+      background-color: green;
+      color: white;
+    }
+  }
+}
+.opcoes{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}

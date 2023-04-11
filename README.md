@@ -43,14 +43,66 @@
 
 &nbsp;
 
+## MUI: [Doc](https://mui.com/material-ui/getting-started/installation/)
+> Uma biblioteca voltada para a utilização de componenetes ja prontos. Vamos utilizala pois o foco do curso é a criação da area administrativa em estrutura, não em com ponente.
+  - Instalação:
+  ~~~JavaScript
+    // Comando NPM
+    npm install @mui/material @emotion/react @emotion/styled
+  ~~~
+  ~~~HTML
+    <!-- Instalação da fonte ROBOTO (Utilizada pela biblioteca) e dos icones -->
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  ~~~
+
+
+&nbsp;
+
 ---
 # Problemas e Soluções ->
+
 ---
+
+## Criação da pasta http:
+> Devido a ter repetição nas requisições ao `axios`, foi criado dentro de `src` uma pasta http e foi criado nela um arquivo de exportação com uma configuração do `axios` com o que se repete.
+
+- E.x:
+~~~JavaScript
+    import axios from "axios";
+
+    const http = axios.create({
+        baseURL: 'http://localhost:8000/api/v2/'
+    });
+
+    export default http
+  ~~~
+
+
+&nbsp;
 
 ## `useEffect`:
 > O useEffect é executado no início do ciclo de vida do componente quando não recebe nenhuma dependência. Dessa forma, podemos executar requisições uma vez, mesmo que o componente seja renderizado novamente.
 
 > No caso desta aplicação o `useEffect` esta fazendo a requisição dos restaurantes no inicio do ciclo de vida do componente para a pagina de restaurantes.
+
+&nbsp;
+
+## O ciclo da administração de restaurantes:
+> Utilizando as funcionalidades do BACK, construimos o Front de Admin com:
+
+- LISTA (GET)
+- DETALHE (GET por id)
+- CADASTRO (POST)
+- EDIÇÃO (PUT)
+- DELEÇÃO (DELETE)
 
 &nbsp;
 
@@ -64,6 +116,23 @@
 - Utilizamos o swagger para entender como a nova API funciona;
 - Instalamos e preparamos o axios;
 - Fizemos requisições GET, para listar pratos e restaurantes.
+
+## Aula 2:
+- Instalamos e utilizamos a biblioteca MUI;
+- Implementamos a listagem de restaurantes realizando uma requisição GET;
+- Criamos a rotina de cadastro de restaurantes com o verbo HTTP POST.
+
+## Aula 3:
+
+- Realizamos requisições utilizando os verbos PUT e DELETE;
+- Enviamos parâmetros em requisições GET;
+- Montamos um formulário de busca de restaurantes.
+
+## Aula 4:
+
+- Organizamos o layout com elementos do MUI;
+- Organizamos o nosso código, centralizando a criação de um cliente do axios;
+- Utilizamos a ordenação de restaurantes da API.
 
 &nbsp;
 
