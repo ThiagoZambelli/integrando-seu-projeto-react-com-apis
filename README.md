@@ -20,10 +20,10 @@
 </div>
 
 
-- ## [Projeto](#projeto)
-- ## [Aulas](#aulas)
-- ## [Problemas e Soluções](#problemas-e-soluções)
-- ## [Material do Projeto inicial](#material-do-projeto-inicial)
+- [Projeto](#projeto)
+- [Aulas](#aulas)
+- [Problemas e Soluções](#problemas-e-soluções)
+- [Material do Projeto inicial](#material-do-projeto-inicial)
 
 &nbsp;
 
