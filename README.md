@@ -28,7 +28,7 @@
 &nbsp;
 
 ---
-# Projeto ->
+# Projeto -> <div id="projeto"></div>
 ---
 
 ## Axios: [Doc](https://axios-http.com/ptbr/docs/intro)
@@ -67,9 +67,25 @@
 &nbsp;
 
 ---
-# Problemas e Soluções ->
+# Problemas e Soluções -> <div id="problemas-e-soluções"></div>
 
 ---
+
+## Tipagem generica:
+> Utilizamos uma tipagem generica nesse exemplo, para que o `results` recebecesse uma interface de arcordo com o que for passado quando o ´IPaginação´ fosse utilizado. Isso fou feito pois o results poderia ser de qualquer requisição.
+
+- E.x:
+~~~JavaScript
+      export interface IPaginacao<T> {
+        count: number
+        next: string
+        previous: string
+        results: T[]
+    }
+  ~~~
+
+
+&nbsp;
 
 ## Criação da pasta http:
 > Devido a ter repetição nas requisições ao `axios`, foi criado dentro de `src` uma pasta http e foi criado nela um arquivo de exportação com uma configuração do `axios` com o que se repete.
@@ -107,7 +123,7 @@
 &nbsp;
 
 ---
-# Aulas ->
+# Aulas -> <div id="aulas"></div>
 ---
 
 ## Aula 1:
@@ -136,7 +152,7 @@
 
 &nbsp;
 
-# Material do projeto inicial ->
+# Material do projeto inicial -> <div id='material-do-projeto-inicial'></div>
 ---
 
 ![Integrando seu projeto React com APIs](thumbnail.png)
