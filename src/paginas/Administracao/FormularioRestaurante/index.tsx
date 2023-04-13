@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { TextField, Button, Typography, Box } from '@mui/material'
+import { TextField, Button, Typography, Box, AppBar, Container, Toolbar, Link, Paper } from '@mui/material'
 import { useParams } from 'react-router-dom';
 import IRestaurante from '../../../interfaces/IRestaurante';
 import http from '../../../http';
+import { Link as RouterLink } from 'react-router-dom';
 
 
 
@@ -44,7 +45,7 @@ export default function FormularioRestaurante() {
     }
 
     return (
-        <Box sx={{display:'flex', flexDirection:'column', alignItems:'center' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flexGrow: 1 }}>
             <Typography component='h1' variant='h6' >Formulario de Restaurantes</Typography>
             <Box component='form' onSubmit={aoSubmeterForm}>
                 <TextField
@@ -56,15 +57,16 @@ export default function FormularioRestaurante() {
                     fullWidth
                     required
                 />
-                <Button 
-                    type='submit' 
+                <Button
+                    type='submit'
                     variant='outlined'
                     fullWidth
-                    sx={{marginTop: 1}}
+                    sx={{ marginTop: 1 }}
                 >
                     Cadastrar
                 </Button>
             </Box>
         </Box>
+
     )
 }

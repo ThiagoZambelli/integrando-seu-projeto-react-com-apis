@@ -150,6 +150,16 @@
 - Organizamos o nosso código, centralizando a criação de um cliente do axios;
 - Utilizamos a ordenação de restaurantes da API.
 
+## Aula 5:
+
+- Aninhamos as rotas da área administrativa;
+- Organizamos o layout utilizando o <Outlet />;
+- Descobrimos que podemos usar async e await para trabalhar com promessas.
+
+&nbsp;
+
+---
+
 &nbsp;
 
 # Material do projeto inicial -> <div id='material-do-projeto-inicial'></div>
