@@ -156,6 +156,12 @@
 - Organizamos o layout utilizando o <Outlet />;
 - Descobrimos que podemos usar async e await para trabalhar com promessas.
 
+## Aula 6:
+
+- Enviamos um arquivo para a api utilizando o FormData;
+- Utilizamos inputs mais complexos do MUI, como por exemplo o Select;
+- Fizemos requisições adicionais necessárias para o formulário de pratos.
+
 &nbsp;
 
 ---
